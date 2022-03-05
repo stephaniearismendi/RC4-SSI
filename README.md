@@ -6,4 +6,4 @@
 
 **Compilar usando _g++ -o rc4 rc4.cpp_. Ejecutar con ./rc4**
         
-> Al compilar aparecen unos warnings, pero es por el texto de decoración. No significa ningún problema en el funcionamiento.
+> Al compilar aparecen unos warnings debido al texto de decoración. No recurre en ningún problema para el funcionamiento.
