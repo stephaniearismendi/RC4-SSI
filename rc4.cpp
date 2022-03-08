@@ -33,7 +33,7 @@ int main()
 
 /**
  * @brief se crea el vector de estados con números decimales del 0 al 255
- * 
+ *
  */
 void RC4::set_vector_estados()
 {
@@ -45,9 +45,9 @@ void RC4::set_vector_estados()
 
 /**
  * @brief función genérica para intercambiar los valores de S[i] y S[j] siempre que sea necesario
- * 
- * @param i 
- * @param j 
+ *
+ * @param i
+ * @param j
  */
 void RC4::swap(int i, int j)
 {
@@ -59,7 +59,7 @@ void RC4::swap(int i, int j)
 
 /**
  * @brief se pide por pantalla el número de semillas a usar, y cuáles.
- * 
+ *
  */
 void RC4::set_clave()
 {
@@ -81,7 +81,7 @@ void RC4::set_clave()
 
 /**
  * @brief Key Scheduling Algorithm. Se pide por pantalla el número de semillas y cuáles se quiere usar, además de inicializarse el vector de estados.
- * 
+ *
  */
 void RC4::KSA()
 {
@@ -100,9 +100,9 @@ void RC4::KSA()
 }
 
 /**
- * @brief pide por pantalla el tamaño del mensaje, además de pedir que se introduzcan sus digitos uno a uno. 
+ * @brief pide por pantalla el tamaño del mensaje, además de pedir que se introduzcan sus digitos uno a uno.
  * Se hace un resize al array de texto por medio de la función set_size_text
- * 
+ *
  */
 void RC4::set_mensaje()
 {
@@ -121,7 +121,7 @@ void RC4::set_mensaje()
 /**
  * @brief Pseudo-Random Generation Algorithm. Cifra el mensaje y devuelve el resultado en decimal o binario.
  * Formato igual al del guion de la práctica.
- * 
+ *
  */
 void RC4::PRGA()
 {
@@ -149,9 +149,9 @@ void RC4::PRGA()
 
 /**
  * @brief función que transforma un int en una cadena en binario. Devuelve una cadena binaria de ocho digitos.
- * 
- * @param n 
- * @return string 
+ *
+ * @param n
+ * @return string
  */
 string RC4::to_binary(int n)
 {
@@ -162,7 +162,9 @@ string RC4::to_binary(int n)
         r = (n % 2 == 0 ? "0" : "1") + r;
         n /= 2;
     }
-    while(r.size() < 8){
+
+    while (r.size() < 8)
+    {
         r = "0" + r;
     }
     return r;
