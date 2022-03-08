@@ -148,7 +148,7 @@ void RC4::PRGA()
 }
 
 /**
- * @brief función que transforma un int en una cadena en binario. no toma en cuenta los ceros de la izquierda.
+ * @brief función que transforma un int en una cadena en binario. Devuelve una cadena binaria de ocho digitos.
  * 
  * @param n 
  * @return string 
@@ -161,6 +161,9 @@ string RC4::to_binary(int n)
     {
         r = (n % 2 == 0 ? "0" : "1") + r;
         n /= 2;
+    }
+    while(r.size() < 8){
+        r = "0" + r;
     }
     return r;
 }
