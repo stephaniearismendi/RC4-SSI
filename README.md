@@ -1,5 +1,5 @@
-### :computer:	Desarrollo del cifrado RC4. ### 
-### Seguridad en Sistemas informáticos.
+## :computer:	Seguridad en Sistemas informáticos. ### 
+### Desarrollo del cifrado RC4.
 
 - Se han usado arrays de ints para el desarrollo de esta práctica. 
 - El mensaje se introduce por pantalla digito a digito.
